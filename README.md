@@ -6,7 +6,7 @@
 Steps
 -------
 
-1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan 
+1. Fill out your learning plan self review for the week: https://github.com/MakersSweden/learning_plan 
 2. Fork this repo, and clone to your local machine
 3. Complete the following challenge:
 
