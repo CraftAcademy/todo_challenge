@@ -2,6 +2,7 @@
 
 * Deadline: submit completed pull request by 9am on Monday
 * You may use whatever level of JavaScript you feel comfortable with - pure JS, jQuery, Angular, or whatever weird and wonderful framework you want to try. Extra points for DogeScript
+* Use everything you have learned so far in terms of driving your development with BDD/TDD, making good use of version control, commiting often, planning your work and be mindful of your workflow. 
 
 Steps
 -------
