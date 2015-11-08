@@ -4,7 +4,7 @@ controller('toDoController', ['$scope',
     function($scope) {
 
         $scope.todos = [{
-            'title': "Enter to-dos",
+            'title': "My first to-do!",
             'completed': false
         }];
 
