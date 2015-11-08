@@ -14,11 +14,13 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    .completed{text-decoration: line-through; color: #FF8080}
+    .completed{text-decoration: line-through !important; color: #FF8080 !important;}
     </style>
   </head>
   <body ng-controller="toDoController">
     <script src="bower_components/angular/angular.min.js"></script>
+    <link href="bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet">
+    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
     <script src="js/app.js"></script>
     <div class="container">
       <div class="row">
@@ -40,7 +42,7 @@
           <ul class="list-group" style="list-style: none;" >
             <li class="list-group-item" ng-repeat="todo in todos">
               <input type="checkbox" ng-model="todo.completed" />
-              <span ng-class="{'completed': todo.completed}">{{ todo.title }}</span>
+              <span editable-text="todo.title" ng-class="{'completed': todo.completed}">{{ todo.title }}</span>
             </li>
           </ul>
           <button class="btn form-control btn-danger" ng-click="clearCompleted()">Clear Completed</button>

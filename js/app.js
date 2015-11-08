@@ -1,10 +1,13 @@
-angular.module('ToDo', []).
-controller('toDoController', ['$scope',
+var app = angular.module('ToDo', ["xeditable"]);
 
+app.run(function(editableOptions) {
+    editableOptions.theme = 'bs3';
+});
+
+app.controller('toDoController', ['$scope',
     function($scope) {
-
         $scope.todos = [{
-            'title': "My first to-do!",
+            'title': "My first to-do! Click to edit or tick the checkbox to mark as completed!",
             'completed': false
         }];
 

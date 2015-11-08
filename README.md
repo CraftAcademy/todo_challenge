@@ -2,12 +2,38 @@
 
 This is an individual educational project for Makers Academy.
 
-## General Instructions
+# Current Status of Project
+
+## Screenshot
+
+![screenshot](http://i.imgur.com/S2lP4xd.png)
+
+## To Run the App
+
+````
+$ git clone git@github.com:chrisco/todo_challenge.git && cd todo_challenge
+$ bower install
+$ open index.html
+````
+
+## Tests and CI
+
+* Unit tests and integration tests are on my to-do list.  Yes, I should have developed with TDD, but chose not to because I only had a little bit of time to work on this weekend challenge and was most excited to play with Angular, so that was my focus.  And it was fun!  That said, I look forward to practicing TDD/BDD with Angular.
+* No CI yet, unfortunately.
+
+## Key Technologies Used
+
+* AngularJS
+* Angular-xeditable
+* Bootstrap
+* Bower
+* jQuery
+
+# Project Instructions and Objectives
 
 1) Use whatever level of JavaScript you feel comfortable with.
-2) Use everything you have learned so far in terms of driving your development with BDD/TDD, making good use of version control, commiting often, planning your work and being mindful of your workflow.
+2) Use everything you have learned so far in terms of driving your development with BDD/TDD, making good use of version control, committing often, planning your work and being mindful of your workflow.
 3) **Deadline**: Submit completed pull request by 9am on Monday.
-
 
 ## Details
 
@@ -59,10 +85,10 @@ Don't worry about deployment, and make sure you read the CONTRIBUTING.md when su
 ## Extensions
 
 1) Deploy the app.
-2) Create a persistance layer (e.g. MongoDB), or use LocalStorage or the filesystem through Node.
+2) Create a persistence layer (e.g. MongoDB), or use LocalStorage or the filesystem through Node.
 3) Make it pretty (with CSS).
 
-## CI
+## CI Instructions
 
 Read the `.travis.yml` if any of the steps below don't make sense:
 
