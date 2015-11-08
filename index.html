@@ -2,13 +2,31 @@
 <html lang="en" ng-app="ToDo">
   <head>
     <meta charset="utf-8">
-    <title>Angular To-do List</title>
+    <title>Extremely Minimal "To-do List" App in AngularJS</title>
+
+    <style type="text/css">
+    .completed{text-decoration: line-through; color: red}
+    </style>
   </head>
-  <body>
+  <body ng-controller="toDoController">
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="js/app.js"></script>
-      What's your name?
-      <input type="text" ng-model="name" />
-    <h2>Hello {{ name }}</h2>
+    <div>
+      <h1>To-do List</h1>
+      <form name="add-todo-form" ng-submit="addToDo()">
+        <input type="text" name="newtodo" ng-model="newToDo" required />
+        <br>
+        <button ng-disabled="add-todo-form.$invalid">Create New To-do</button>
+      </form>
+      <button ng-click="clearCompleted()">Clear Completed To-dos</button>
+    </div>
+    <div>
+      <ul style="list-style: none;" >
+        <li ng-repeat="todo in todos">
+          <input type="checkbox" ng-model="todo.completed" />
+          <span ng-class="{'completed': todo.completed}">{{ todo.title }}</span>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
