@@ -6,7 +6,7 @@ This is an individual educational project for Makers Academy.
 
 ## Screenshot
 
-![screenshot](http://i.imgur.com/S2lP4xd.png)
+![screenshot](https://github.com/chrisco/todo_challenge/blob/master/screenshot.png?raw=true)
 
 ## To Run the App
 
