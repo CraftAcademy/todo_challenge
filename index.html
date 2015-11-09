@@ -43,7 +43,9 @@
             <li class="list-group-item" ng-repeat="todo in todos">
               <input type="checkbox" ng-model="todo.completed" />
               <span editable-text="todo.title" ng-class="{'completed': todo.completed}">{{ todo.title }}</span>
-              <span class="btn btn-danger btn-xs glyphicon glyphicon-trash pull-right" ng-click="removeToDo()"></span>
+              <span ng-click="removeToDo(todo)">
+                <span class="btn btn-danger btn-xs glyphicon glyphicon-trash pull-right"></span>
+              </span>
             </li>
           </ul>
           <button class="btn form-control btn-danger" ng-click="clearCompleted()">Clear Completed</button>
