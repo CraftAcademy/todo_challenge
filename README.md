@@ -1,20 +1,24 @@
 # "To-do" Challenge
 
-This is an individual educational project for Makers Academy.
+What's this all about?  It's an individual educational project for Makers Academy!
 
 # Current Status of Project
 
-## Screenshot
+It's a work in progress.  Currently, the app works locally and [online](http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net/).  No tests yet.  No database yet.  Missing features.  Styling "needs work."  Screenshot below:
 
 ![screenshot](https://github.com/chrisco/todo_challenge/blob/master/screenshot.png?raw=true)
 
-## To Run the App
+## Run the App Locally
 
 ````
 $ git clone git@github.com:chrisco/todo_challenge.git && cd todo_challenge
 $ bower install
 $ open index.html
 ````
+
+## Try It Online
+
+http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net
 
 ## Tests and CI
 
@@ -27,7 +31,16 @@ $ open index.html
 * Angular-xeditable
 * Bootstrap
 * Bower
+* IBM Bluemix
 * jQuery
+
+## Roadmap
+
+1) Feature: Ability to delete to-dos
+2) Feature: Persist data (local and/or remote database)
+3) Feature: Visitors can sign up and become Users
+4) Styling (responsive and "mobile first")
+5) Tests and CI
 
 # Project Instructions and Objectives
 

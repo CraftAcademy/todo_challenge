@@ -19,6 +19,10 @@ app.controller('toDoController', ['$scope',
             $scope.newToDo = '';
         };
 
+        $scope.removeToDo = function(todo) {
+
+        };
+
         $scope.clearCompleted = function() {
             $scope.todos = $scope.todos.filter(function(todo) {
                 return !todo.completed;
