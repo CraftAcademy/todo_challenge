@@ -1,0 +1,21 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{tasks.task}}">
+  <ion-content class="padding">
+
+<input type="text" placeholder="What needs to get done?" ng-model="addTask.newTask">
+</label>
+<label class="item item-input">
+  <span class="input-label">Deadline</span>
+  <input type="date" ng-model="addTask.deadline">
+</label>
+<button class="button button-block button-positive" ng-click="addTask()">
+Add task
+</button>
+
+  </ion-content>
+</ion-view>

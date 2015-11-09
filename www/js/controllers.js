@@ -16,13 +16,12 @@ angular.module('starter.controllers', [])
     ToDos.remove(task);
   };
   $scope.addTask = function() {
-var toDoTask = $scope.addTask.newTask;
-    $scope.tasks.push({ task: toDoTask});
+    $scope.tasks.push({ task: $scope.addTask.newTask, deadline: $scope.addTask.deadLine });
     };
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, ToDos) {
-  $scope.chat = ToDos.get($stateParams.chatId);
+.controller('ToDoDetailCtrl', function($scope, $stateParams, ToDos) {
+  $scope.tasks = ToDos.get($stateParams.taskId);
 })
 
 .controller('AccountCtrl', function($scope) {
