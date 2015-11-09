@@ -8,20 +8,26 @@ angular.module('starter.services', [])
   var tasks = [{
     id: 0,
     task: 'Pick up the kids at 17.00 h.',
-    deadline: '2015-10-23'
+    deadline: '2015-10-23',
+    status: 'Done'
   }, {
     id: 1,
     task: 'Do the laundry.',
-    deadline: '2015-12-05'
+    deadline: '2015-12-05',
+    status: 'Pending'
   }, {
     id: 2,
     task: 'Workout',
-    deadline: '2015-11-24'
+    deadline: '2015-11-24',
+    status: 'Done'
   }
 
   ];
 
   return {
+    id: function() {
+      return tasks.length+1;
+    },
     all: function() {
       return tasks;
     },

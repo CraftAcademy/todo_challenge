@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
-.controller('ToDoCtrl', function($scope, $stateParams, ToDos) {
+.controller('ToDoCtrl', function($scope, $stateParams, ToDos, $filter) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -16,12 +16,18 @@ angular.module('starter.controllers', [])
     ToDos.remove(task);
   };
   $scope.addTask = function() {
-    $scope.tasks.push({ task: $scope.addTask.newTask, deadline: $scope.addTask.deadLine });
+    $scope.tasks.push({ id: '4', task: $scope.addTask.newTask, deadline: $scope.addTask.deadLine });
     };
+      $scope.filterAll = $filter('uppercase')($scope.tasks);
 })
 
 .controller('ToDoDetailCtrl', function($scope, $stateParams, ToDos) {
   $scope.tasks = ToDos.get($stateParams.taskId);
+
+  $scope.editTask = function(){
+      $scope.tasks.task = $scope.editTask.updateTask;
+      $scope.tasks.deadline = $scope.editTask.deadLine;
+    };
 })
 
 .controller('AccountCtrl', function($scope) {

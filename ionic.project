@@ -1,4 +1,5 @@
 {
   "name": "toDo",
-  "app_id": ""
+  "app_id": "",
+  "defaultBrowser": true
 }

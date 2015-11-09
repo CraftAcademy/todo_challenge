@@ -7,14 +7,14 @@
 <ion-view view-title="{{tasks.task}}">
   <ion-content class="padding">
 
-<input type="text" placeholder="What needs to get done?" ng-model="addTask.newTask">
+<input type="text" ng-init="editTask.updateTask = tasks.task" ng-model="editTask.updateTask">
 </label>
 <label class="item item-input">
   <span class="input-label">Deadline</span>
-  <input type="date" ng-model="addTask.deadline">
+  <input type="date" ng-model="editTask.deadLine">
 </label>
-<button class="button button-block button-positive" ng-click="addTask()">
-Add task
+<button class="button button-block button-positive" ng-click="editTask()">
+Update task
 </button>
 
   </ion-content>
