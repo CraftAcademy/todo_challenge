@@ -19,8 +19,10 @@ app.controller('toDoController', ['$scope',
             $scope.newToDo = '';
         };
 
-        $scope.removeToDo = function(todo) {
-
+        $scope.removeToDo = function(removeMe) {
+            var todos = $scope.todos;
+            var index = todos.indexOf(removeMe);
+            todos.splice(index, 1);
         };
 
         $scope.clearCompleted = function() {

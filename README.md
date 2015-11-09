@@ -1,6 +1,6 @@
 # "To-do" Challenge
 
-What's this all about?  It's an individual educational project for Makers Academy!
+What's this all about?  It's an individual educational project for Makers Academy.
 
 # Current Status of Project
 
