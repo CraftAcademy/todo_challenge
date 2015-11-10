@@ -1,0 +1,31 @@
+<ion-view view-title="Todo list">
+<ion-content>
+<ion-list>
+<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="task in tasks" type="item-text-wrap" href="#/tab/todos/{{task.id}}">
+<h2>{{task.task}} </h2>
+<p>{{task.deadline | date : format : short}}</p>
+<i class="icon ion-chevron-right icon-accessory"></i>
+<ion-option-button class="button-positive" ng-click="taskDone(task)">
+Task Done
+</ion-option-button>
+</ion-item>
+</ion-list>
+<label class="item item-input">
+<span class="input-label">Task</span>
+
+  <input type="text" placeholder="What needs to get done?" ng-model="addTask.newTask">
+</label>
+<label class="item item-input">
+  <span class="input-label">Deadline</span>
+  <input type="date" ng-model="addTask.deadLine">
+</label>
+<button class="button button-block button-positive" ng-click="addTask()">
+Add task
+</button>
+<div class="button-bar">
+  <a class="button">All</a>
+  <a class="button">Pending</a>
+  <a class="button">Done</a>
+</div>
+</ion-content>
+</ion-view>
