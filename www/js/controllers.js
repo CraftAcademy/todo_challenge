@@ -16,7 +16,7 @@ angular.module('starter.controllers', [])
     ToDos.remove(task);
   };
   $scope.addTask = function() {
-    $scope.tasks.push({ id: '4', task: $scope.addTask.newTask, deadline: $scope.addTask.deadLine });
+    $scope.tasks.push({ id: $scope.tasks.length, task: $scope.addTask.newTask, deadline: $scope.addTask.deadLine });
     };
       $scope.filterAll = $filter('uppercase')($scope.tasks);
 })
