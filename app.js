@@ -7,7 +7,7 @@ app.run(function(editableOptions) {
 app.controller('toDoController', ['$scope',
     function($scope) {
         $scope.todos = [{
-            'title': "My first to-do! Click to edit or tick the checkbox to mark as completed!",
+            'title': "First to-do: Click to edit or tick the checkbox to mark as completed!",
             'completed': false
         }];
 

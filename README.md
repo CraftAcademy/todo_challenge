@@ -32,12 +32,13 @@ http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net
 * Angular-xeditable
 * Bootstrap
 * Bower
-* IBM Bluemix
+* Bluemix
 * jQuery
 * Node.js
 
 ## Roadmap
 
+* Refactor, extract, and organize code and files.
 * Feature: Persist data (local and/or remote database)
 * Feature: Visitors can sign up and become Users
 * Tests and CI
