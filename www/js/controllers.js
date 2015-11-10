@@ -15,6 +15,9 @@ angular.module('starter.controllers', [])
   $scope.remove = function(task) {
     ToDos.remove(task);
   };
+  $scope.taskDone = function(task) {
+    ToDos.taskDone(task);
+  };
   $scope.addTask = function() {
     $scope.tasks.push({ id: $scope.tasks.length, task: $scope.addTask.newTask, deadline: $scope.addTask.deadLine });
     };
@@ -29,10 +32,6 @@ angular.module('starter.controllers', [])
       $scope.tasks.deadline = $scope.editTask.deadLine;
       $state.go('tab.todos');
     };
-
-  $scope.changeView = function(view){
-            $location.path(view); // path not hash
-        };
 
 })
 

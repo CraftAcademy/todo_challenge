@@ -5,7 +5,7 @@
 <h2>{{task.task}} </h2>
 <p>{{task.deadline | date : format : short}}</p>
 <i class="icon ion-chevron-right icon-accessory"></i>
-<ion-option-button class="button-positive" ng-click="remove(chat)">
+<ion-option-button class="button-positive" ng-click="taskDone(task)">
 Task Done
 </ion-option-button>
 </ion-item>

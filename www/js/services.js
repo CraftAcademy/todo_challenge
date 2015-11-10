@@ -9,17 +9,17 @@ angular.module('starter.services', [])
     id: 0,
     task: 'Pick up the kids at 17.00 h.',
     deadline: '2015-10-23',
-    status: 'Done'
+    taskstatus: 'Done'
   }, {
     id: 1,
     task: 'Do the laundry.',
     deadline: '2015-12-05',
-    status: 'Pending'
+    taskstatus: 'Pending'
   }, {
     id: 2,
     task: 'Workout',
     deadline: '2015-11-24',
-    status: 'Done'
+    taskstatus: 'Done'
   }
 
   ];
@@ -31,8 +31,11 @@ angular.module('starter.services', [])
     all: function() {
       return tasks;
     },
-    remove: function(chat) {
+    remove: function(task) {
       tasks.splice(task.indexOf(tasks), 1);
+    },
+        taskDone: function(task) {
+      task.taskstatus = 'Done';
     },
     get: function(taskId) {
       for (var i = 0; i < tasks.length; i++) {
