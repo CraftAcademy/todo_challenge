@@ -21,13 +21,19 @@ angular.module('starter.controllers', [])
       $scope.filterAll = $filter('uppercase')($scope.tasks);
 })
 
-.controller('ToDoDetailCtrl', function($scope, $stateParams, ToDos) {
+.controller('ToDoDetailCtrl', function($scope, $stateParams, ToDos, $state) {
   $scope.tasks = ToDos.get($stateParams.taskId);
 
   $scope.editTask = function(){
       $scope.tasks.task = $scope.editTask.updateTask;
       $scope.tasks.deadline = $scope.editTask.deadLine;
+      $state.go('tab.todos');
     };
+
+  $scope.changeView = function(view){
+            $location.path(view); // path not hash
+        };
+
 })
 
 .controller('AccountCtrl', function($scope) {
