@@ -6,7 +6,7 @@ What's this all about?  It's an individual educational project for Makers Academ
 
 It's a work in progress.  Currently, the app works locally and [online](http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net/).  No tests yet.  No database yet.  Missing features.  Styling "needs work."  Screenshot below:
 
-![screenshot](https://github.com/chrisco/todo_challenge/blob/master/screenshot.png?raw=true)
+![screenshot](https://github.com/chrisco/todo_challenge/blob/master/screenshot-of-app.png?raw=true)
 
 ## Run the App Locally
 
