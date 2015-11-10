@@ -13,6 +13,7 @@ It's a work in progress.  Currently, the app works locally and [online](http://t
 ````
 $ git clone git@github.com:chrisco/todo_challenge.git && cd todo_challenge
 $ bower install
+$ npm install
 $ open index.html
 ````
 
@@ -33,14 +34,15 @@ http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net
 * Bower
 * IBM Bluemix
 * jQuery
+* Node.js
 
 ## Roadmap
 
-1) Feature: Ability to delete to-dos
-2) Feature: Persist data (local and/or remote database)
-3) Feature: Visitors can sign up and become Users
-4) Styling (responsive and "mobile first")
-5) Tests and CI
+* Feature: Persist data (local and/or remote database)
+* Feature: Visitors can sign up and become Users
+* Tests and CI
+* Better styling
+* More features (due dates, reminders, etc.)
 
 # Project Instructions and Objectives
 
