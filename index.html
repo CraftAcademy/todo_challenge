@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDo">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Super Duper To-do List App</title>
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    .completed{text-decoration: line-through !important; color: #FF8080 !important;}
+    </style>
+  </head>
+  <body ng-controller="toDoController">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <link href="bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet">
+    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
+    <script src="app.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2><span class="glyphicon glyphicon-ok"></span> The Super Duper To-do List App</h2>
+          <form name="add-todo-form" ng-submit="addToDo()">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <input class="form-control" type="text" placeholder="Enter to-do item here..." name="newtodo" ng-model="newToDo" required autofocus />
+                <button class="btn form-control btn-success" ng-disabled="add-todo-form.$invalid">Create</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>To-do List <small><span class="badge">{{ todos.length }}</span></small></h3>
+          <ul class="list-group" style="list-style: none;" >
+            <li class="list-group-item" ng-repeat="todo in todos">
+              <input type="checkbox" ng-model="todo.completed" />
+              <span editable-text="todo.title" ng-class="{'completed': todo.completed}">{{ todo.title }}</span>
+              <span ng-click="removeToDo(todo)">
+                <span class="btn btn-danger btn-xs glyphicon glyphicon-trash pull-right"></span>
+              </span>
+            </li>
+          </ul>
+          <button class="btn form-control btn-danger" ng-click="clearCompleted()">Clear Completed</button>
+        </div>
+      </div>
+      <footer class="navbar-default navbar-fixed-bottom">
+        <div class="container">
+          <span><small>Christopher Comella &copy; 2015</small></span>
+          <a href="http://github.com/chrisco"><span class="btn fa fa-github"></span></span></a>
+          <a href="http://linkedin.com/in/comella"><span class="btn fa fa-linkedin-square"></span></span></a>
+          <a href="http://twitter.com/chrisco"><span class="btn fa fa-twitter-square"></span></span></a>
+        </div>
+      </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
