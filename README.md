@@ -4,27 +4,22 @@ What's this all about?  It's an individual educational project for Makers Academ
 
 # Current Status of Project
 
-It's a work in progress.  Currently, the app works locally and [online](http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net/).  No tests yet.  No database yet.  Missing features.  Styling "needs work."  Screenshot below:
+It's a work in progress.  Currently, the app works locally and [online](http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net/).  No tests yet.  No database yet.  Missing features.  Improved styling.  Screenshot below:
 
 ![screenshot](https://github.com/chrisco/todo_challenge/blob/master/screenshot-of-app.png?raw=true)
-
-## Run the App Locally
-
-````
-$ git clone git@github.com:chrisco/todo_challenge.git && cd todo_challenge
-$ bower install
-$ npm install
-$ open index.html
-````
 
 ## Try It Online
 
 http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net
 
-## Tests and CI
+## Roadmap
 
-* Unit tests and integration tests are on my to-do list.  Yes, I should have developed with TDD, but chose not to because I only had a little bit of time to work on this weekend challenge and was most excited to play with Angular, so that was my focus.  And it was fun!  That said, I look forward to practicing TDD/BDD with Angular.
-* No CI yet, unfortunately.
+* Refactor: Extract, and organize code and files
+* Feature: Persist data (local and/or remote database)
+* Feature: Visitors can sign up and become Users
+* Tests and CI
+* Better styling
+* More features (due dates, reminders, etc.)
 
 ## Key Technologies Used
 
@@ -36,14 +31,23 @@ http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net
 * jQuery
 * Node.js
 
-## Roadmap
+## Try It Online
 
-* Refactor, extract, and organize code and files.
-* Feature: Persist data (local and/or remote database)
-* Feature: Visitors can sign up and become Users
-* Tests and CI
-* Better styling
-* More features (due dates, reminders, etc.)
+http://the-super-duper-to-do-list-app.eu-gb.mybluemix.net
+
+## Run the App Locally
+
+````
+$ git clone git@github.com:chrisco/todo_challenge.git && cd todo_challenge
+$ bower install
+$ npm install
+$ open index.html
+````
+
+## Tests and CI
+
+* Unit tests and integration tests are on my to-do list.  Yes, I should have developed with TDD, but chose not to because I only had a little bit of time to work on this weekend challenge and was most excited to play with Angular, so that was my focus.  And it was fun!  That said, I look forward to practicing TDD/BDD with Angular.
+* No CI yet, unfortunately.
 
 # Project Instructions and Objectives
 
